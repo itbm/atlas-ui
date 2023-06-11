@@ -14,7 +14,7 @@ export const OPENAI_API_URL =
 export const OPENAI_API_KEY = dockerEnvVarFix(process.env.OPENAI_API_KEY) || '';
 
 export const DEFAULT_TEMPERATURE = parseFloat(
-  dockerEnvVarFix(process.env.NEXT_PUBLIC_DEFAULT_TEMPERATURE) || '1',
+  dockerEnvVarFix(process.env.NEXT_PUBLIC_DEFAULT_TEMPERATURE) || '0.7',
 );
 
 export const OPENAI_API_TYPE =

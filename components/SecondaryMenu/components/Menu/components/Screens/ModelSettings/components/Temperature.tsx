@@ -12,18 +12,12 @@ export const TemperatureSlider = () => {
     state: { conversations, selectedConversation },
     handleUpdateConversation,
   } = useContext(HomeContext);
-  const lastConversation = conversations[conversations.length - 1];
-  const [temperature, setTemperature] = useState(
-    lastConversation?.temperature ?? DEFAULT_TEMPERATURE,
-  );
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = parseFloat(event.target.value);
-    setTemperature(newValue);
-
     if (selectedConversation) {
       handleUpdateConversation(selectedConversation, {
         key: 'temperature',
-        value: temperature,
+        value: newValue,
       });
     }
   };
@@ -31,7 +25,7 @@ export const TemperatureSlider = () => {
   return (
     <div className="flex flex-col">
       <span className="mb-1 text-center text-neutral-900 dark:text-neutral-100">
-        {temperature.toFixed(1)}
+        {selectedConversation?.temperature.toFixed(1)}
       </span>
       <input
         className="w-full h-1 bg-gradient-to-r from-fuchsia-600 via-violet-900 to-indigo-500
@@ -41,7 +35,7 @@ export const TemperatureSlider = () => {
         min={0}
         max={1}
         step={0.1}
-        value={temperature}
+        value={selectedConversation?.temperature ?? DEFAULT_TEMPERATURE}
         onChange={handleChange}
       />
       <ul className="w mt-2 pb-8 flex justify-between px-[24px] text-neutral-900 dark:text-neutral-100">
