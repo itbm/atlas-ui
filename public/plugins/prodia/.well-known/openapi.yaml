@@ -46,7 +46,7 @@ components:
         upscale:
           type: boolean
           default: true
-        aspect_ration:
+        aspect_ratio:
           type: string
           enum:
             - square
