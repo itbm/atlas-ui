@@ -30,9 +30,12 @@ const modelMap = {
   'Dreamshaper 6 BakedVae': 'dreamshaper_6BakedVae.safetensors [114c8abb]',
   'Elddreths Vivid Mix': 'elldreths-vivid-mix.safetensors [342d9d26]',
   'Lyriel v15': 'lyriel_v15.safetensors [65d547c5]',
+  'Lyriel v16': 'lyriel_v16.safetensors [68fceea2]',
   'Meinamix MeinaV9': 'meinamix_meinaV9.safetensors [2ec66ab0]',
   'Openjourney V4': 'openjourney_V4.ckpt [ca2f377f]',
   'Portrait+ 1.0': 'portrait+1.0.safetensors [1400e684]',
+  'Realistic Vision V1.4':
+    'Realistic_Vision_V1.4-pruned-fp16.safetensors [8d21810b]',
   'Realistic Vision V2.0': 'Realistic_Vision_V2.0.safetensors [79587710]',
   'Rev Animated v122': 'revAnimated_v122.safetensors [3f4fefd9]',
   'SDV1 4': 'sdv1_4.ckpt [7460a6fa]',
@@ -60,7 +63,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
     parsedModel = modelMap[body.model as keyof typeof modelMap];
     if (!parsedModel) {
-      parsedModel = modelMap['Dreamlike Diffusion 2.0'];
+      parsedModel = modelMap['Realistic Vision V1.4'];
     }
   } catch (e) {
     return res.status(500).json({
@@ -70,11 +73,11 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
   const defaultSettings = {
     steps: body.steps || 20,
-    cfg_scale: body.cfg_scale || 7,
+    cfg_scale: body.cfg_scale || 8,
     upscale: body.upscale || true,
     sampler: body.sampler || 'DDIM',
     aspect_ratio: body.aspect_ratio || 'square',
-    model: modelMap['Dreamlike Diffusion 2.0'],
+    model: modelMap['Realistic Vision V1.4'],
   };
 
   const imageGenerationRequest = {
