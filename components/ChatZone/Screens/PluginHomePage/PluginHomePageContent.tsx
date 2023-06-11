@@ -104,8 +104,12 @@ export const PluginHomePageContent = ({
                   );
                 },
                 img({ src, alt, width, height }) {
+                  if (!width && !height) {
+                    width = '1024px';
+                    height = '1024px';
+                  }
                   return (
-                    <Image
+                    <img
                       src={src!}
                       alt={alt!}
                       width={parseInt(width as string)}
