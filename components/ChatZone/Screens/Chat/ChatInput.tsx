@@ -318,7 +318,9 @@ export const ChatInput = ({
               }`,
             }}
             placeholder={
-              t('Type a message or type "/" to select a prompt...') || ''
+              t(
+                'Type a message. Start with ! to use a plugin or type / to select a prompt...',
+              ) || ''
             }
             value={content}
             rows={1}
