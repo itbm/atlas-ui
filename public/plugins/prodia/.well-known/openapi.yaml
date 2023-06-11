@@ -1,8 +1,8 @@
 openapi: 3.0.2
 info:
-  title: StableGen Plugin
+  title: Prodia Plugin
   description: Plugin allows a user to generate images using a stable diffusion model. The user just needs to specify which model to use.
-  author: Tech in School Initiative
+  author: Tech in Schools Initiative
   version: 1.0.0
   servers:
     - url: /api/plugins/prodia

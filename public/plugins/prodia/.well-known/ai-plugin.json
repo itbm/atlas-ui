@@ -4,7 +4,7 @@
   "schema_version": "v1",
   "name_for_model": "Prodia, the stable diffusion plugin",
   "name_for_human": "Prodia",
-  "description_for_model": "Plugin allows a user to generate images using a stable diffusion model. The user just needs to specify which model to use. The model can also accept a number of steps and a seed. This plugin needs the user input to be unaltered. Pass exactly what the user asks for.",
+  "description_for_model": "Plugin allows a user to generate images using a stable diffusion model. The user just needs to specify which model to use. The model can also accept a number of steps and a seed.",
   "description_for_human": "Generate images using a stable diffusion model.",
   "invocation_name": "prodia",
   "auth": {
@@ -27,8 +27,8 @@
       "url": "/plugins/prodia/.well-known/prompts/input/openai.txt"
     }
   },
-  "author": "Tech in School Initiative",
+  "author": "Tech in Schools Initiative",
   "logo_url": "/plugins/prodia/.well-known/logo.png",
-  "contact_email": "rcohen@mytsi.org",
+  "contact_email": "jorgemenjivar1997@gmail.com",
   "tags": "image, generation, stable, diffusion, avatar"
 }
