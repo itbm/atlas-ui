@@ -1,14 +1,10 @@
-# Chatbot UI
+# Atlas UI
 
-Chatbot UI is an open source chat UI for AI models.
+Atlas UI is an open source space for Generative AI.
 
-<a href="https://discord.gg/q9AQP2w6gK">
-  <img src="https://discordapp.com/api/guilds/1103099861215232010/widget.png?style=banner2" alt="Discord Banner"/>
+<a href="https://discord.gg/MWf3Kf2UBZ">
+  <img src="https://discordapp.com/api/guilds/1117324996814053486/widget.png?style=banner2" alt="Discord Banner"/>
 </a>
-
-![Chatbot UI](./public/screenshots/main_screenshot.png)
-
-See a [demo](https://twitter.com/mckaywrigley/status/1640380021423603713?s=46&t=AowqkodyK6B4JccSOxSPew).
 
 ## Updates
 
@@ -28,14 +24,6 @@ See a [demo](https://twitter.com/mckaywrigley/status/1640380021423603713?s=46&t=
 - [ ] In-app plugin system
 - [ ] @chatbot-ui/couchdb extension
 - [ ] @chatbot-ui/mongodb extension
-
-## Deploy
-
-**Vercel**
-
-Host your own live version of Chatbot UI with Vercel.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjorge-menjivar%2Fchatbot-ui)
 
 ## Usage
 

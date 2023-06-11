@@ -5,7 +5,7 @@ The Python Interpreter Plugin enables you to execute Python code right within yo
 ## Features
 
 1. **Write and Run Python Code**: Write and execute Python code using natural language instructions.
-2. **Code Suggestions**: Receive code suggestions and tips from UnSaged while coding.
+2. **Code Suggestions**: Receive code suggestions and tips from Atlas while coding.
 3. **Debugging Assistance**: Get help identifying and fixing errors in your code.
 
 ## Installation

@@ -634,8 +634,11 @@ const Home = ({ serverSideApiKeyIsSet, defaultModelId }: Props) => {
       }}
     >
       <Head>
-        <title>unSAGED UI</title>
-        <meta name="description" content="ChatGPT but better." />
+        <title>Atlas UI</title>
+        <meta
+          name="description"
+          content="The singular space for Generative AI"
+        />
         <meta
           name="viewport"
           content="height=device-height, width=device-width, initial-scale=1, user-scalable=no"
